@@ -14,15 +14,22 @@ class Stack
 		stack = new int[size];
 	}
 
+
+// function to check stack is full
+	
 	boolean isFull()
 	{
 		return (top == size-1) ? true : false;
 	}
 
+// function to check stack is empty
+
 	boolean isEmpty()
 	{
 		return (top == -1) ? true : false;
 	}
+
+// function to push into the stack
 
 	void push(int data)
 	{
@@ -35,6 +42,8 @@ class Stack
 		}
 	}
 
+// function to pop from the stack
+
 	void pop()
 	{
 		if(isEmpty())
@@ -46,6 +55,8 @@ class Stack
 		 	System.out.println(data+" is poped out from the stack");
 		}
 	}
+
+// function to return top element of the stack
 
 	int peek()
 	{
