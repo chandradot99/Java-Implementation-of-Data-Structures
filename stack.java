@@ -63,7 +63,7 @@ class Stack
 		if(!isEmpty())
 			return stack[top];
 
-		return Integer.MAX_VALUE;
+		return Integer.MIN_VALUE;// return when stack is empty
 	}
 }
 
